@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/wheat"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/history_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+    <TextView
+        android:id="@+id/user_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/bottom_navigation_view"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/user_name"
+        android:textSize="10pt"
+        />
+    <TextView
+        android:id="@+id/current_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/bottom_navigation_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/not_defined"
+        android:textSize="8pt"
+        />
+    <Button
+        android:id="@+id/change_name_button"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        app:layout_constraintBottom_toTopOf="@id/bottom_navigation_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/change_name"
+        android:background="@color/dark_khaki"
+        android:textAllCaps="false"
+        />
+    <EditText
+        android:id="@+id/change_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/current_user_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:hint="@string/type_here"
+        android:inputType="textPersonName"
+        />
+    <Button
+        android:id="@+id/save_name_button"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        app:layout_constraintBottom_toTopOf="@id/change_name_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/save_changes"
+        android:background="@color/dark_khaki"
+        android:textAllCaps="false"
+        />
+
+
+    <include
+        android:id="@+id/bottom_navigation_view"
+        layout="@layout/bottom_navigation_view"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

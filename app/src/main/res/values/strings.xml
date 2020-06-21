@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Coffee house</string>
+    <string name="volume">Volume</string>
+    <string name="price">Price</string>
+    <string name="total_sum">Total Sum:</string>
+    <string name="user_name">Your Name:</string>
+    <string name="not_defined">Not defined</string>
+    <string name="change_name">Change Name</string>
+    <string name="confirm_order">Confirm Order</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="type_here">Type Here</string>
+</resources>
